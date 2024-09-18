@@ -1,0 +1,164 @@
+:root {
+    --text-color: black;
+    --background-color: #e7e7e7;
+    --accent-1: #222;
+    --accent-2: #414141;
+    --accent-3: #636363;
+    --accent-4: #e7e7e7;
+    --contrast-text-color: white;
+    --font-family: "Poppins", "Verdana", "Trebuchet MS", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    height: 100vh;
+}
+
+/* Header stuff */
+
+header {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-column: 1/4;
+    background-color: var(--accent-2);
+    color: var(--contrast-text-color);
+}
+
+header > .header-content {
+    grid-row: 1/2;
+    padding: 2rem;
+}
+
+header nav {
+    /* padding: 1rem; */
+    background-color: var(--accent-1);
+    display: flex;
+    justify-content: space-around;
+    grid-row: 2/3;
+}
+
+header nav .nav-item {
+    display: inline-block;
+    padding: 1rem;
+}
+
+header nav .nav-item a {
+    color: var(--contrast-text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav .nav-item:hover {
+    text-decoration: underline;
+    background-color: var(--accent-3);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 1200px;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    justify-content: space-around;
+    background-color: var(--accent-4);
+    grid-column: 1/4;
+}
+
+/* Card stuff */
+
+.card {
+    border: var(--accent-1) solid 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: .5rem;
+    overflow: hidden;
+}
+
+.card:first-child {
+    flex: 2 1 300px;
+    min-width: 600px;
+}
+
+.card:nth-child(2) {
+    flex: 1 1 150px;
+    min-width: 200px;
+}
+
+.card > h2 {
+    background-color: var(--accent-3);
+    color: var(--contrast-text-color);
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card .row {
+    display: flex;
+    flex: 1 1 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.card .row > img{
+    max-width: 45%;
+    box-shadow: 0 4px 8px;
+    text-align: center;
+}
+
+.card .row .image-container {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.card .row .text {
+    flex: 1;
+}
+
+.card > h3 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0 2rem;
+}
+
+.card > p {
+    padding: 1rem;
+}
+
+.card > ul {
+    align-content: center;
+}
+
+/* Footer Stuff */
+
+footer {
+    padding: 2rem;
+    grid-column: 1 / 4;
+    background-color: var(--accent-2);
+    color: var(--contrast-text-color);
+    text-align: center;
+}

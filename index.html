@@ -3,24 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Steven Thomas</title>
+    <meta author="Steven Thomas" description="Steven Thomas, WDD131 - Dynamic Web Fundamentals, Home page">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
     <div class="parent">
-        <div class="header">
-            <header>Header Content</header>
+        <header>
+            <h1 class="header-content">
+                WDD 131: Dynamic Web Fundamentals - Steven C. Thomas
+            </h1>
             <nav>
-                <div>Home</div>
-                <div>Projects</div>
-                <div>Services</div>
-                <div>Contact Us</div>
+                <div class="nav-item">
+                    <a href="https://www.linkedin.com/in/steven-thomas-8383b1282" target="_blank" rel="noopener" title="Open in new tab">LinkedIn</a>
+                </div>
+                <div class="nav-item">
+                    <a href="https://byui.instructure.com/" target="_blank" rel="noopener" title="Open in new tab">I-Learn</a>
+                </div>
+                <div class="nav-item">
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener" title="Open in new tab">Scripture</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" target="_blank" rel="noopener" title="Open in new tab">Final Project</a>
+                </div>
             </nav>
-        </div>
-        <!-- <div class="left-side">Left</div> -->
-        <main>Main Content</main>
-        <div class="right-side">Aside</div>
-        <footer>Footer Content</footer>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="row">
+                    <p class="text">
+                        My name is Steven Thomas and I'm a server at a local restaurant here in Ketchikan, Alaska. I served a mission in the Santa Ana El Salvador mission (The best mission in the world ). Something interesting about my mission is that due to the Covid-19 pandemic, I was 19 when I first left for my mission and 23 when I returned home in 2022.
+                    </p>
+                    <img src="images/trigger.jpg" alt="">
+                </div>
+                
+                <h3>Ketchikan, Alaska</h3>
+                <div class="row">
+                    <div class="image-container">
+                        <img src="images/placeholder.png" alt="">
+                        <p>That's Trigger.</p>
+                    </div>
+                    <p class="text">
+                        Ketchikan, Alaska, located on Revillagigedo Island, is known as the "Salmon Capital of the World" for its thriving fishing industry. Situated in the heart of the Tongass National Forest, the largest temperate rainforest in the world, Ketchikan offers visitors stunning natural beauty and abundant wildlife.
+
+                        The city is also famous for its Native Alaskan culture, particularly its impressive collection of totem poles, which can be seen at sites like Totem Bight State Park and the Totem Heritage Center. Ketchikan's history is deeply connected to the Tlingit, Haida, and Tsimshian peoples.
+
+                        With a wet, maritime climate, Ketchikan experiences significant rainfall and is a popular stop for cruise ships in Southeast Alaska. Visitors enjoy activities such as fishing, hiking, and exploring Creek Street, a historic boardwalk. Tourism, fishing, and timber are key industries that sustain the local economy.
+                    </p>
+                </>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com" target="_blank" rel="noopener" title="Open in new tab">W3 Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener" title="Open in new tab">MDN Web Docs</a></li>
+                    <li><a href="https://www.byupathway.edu" target="_blank" rel="noopener" title="Open in new tab">BYU Pathways</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p><span id="currentYear"></span> | Steven Thomas | Alaska, USA</p>
+            <p id="lastModified"></p>
+        </footer>
     </div>
 </body>
 </html>
