@@ -37,6 +37,7 @@ header {
 header > .header-content {
     grid-row: 1/2;
     padding: 2rem;
+    text-align: center;
 }
 
 header nav {
@@ -133,6 +134,8 @@ main {
     width: 100%;
     object-fit: cover;
     height: auto;
+    box-shadow: 0 4px 8px;
+    text-align: center;
 }
 
 .card .row .text {
