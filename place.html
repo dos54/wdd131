@@ -18,6 +18,7 @@
 
     <script defer src="scripts/place.js"></script>
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/calculate-windchill.js"></script>
 </head>
 <body>
     <header>
@@ -36,14 +37,14 @@
             </div>
             <div class="card-content">
                 <ul>
-                    <li>Area: <span id="area">400ft</span></li>
-                    <li>Population: <span id="population">6000 people</span></li>
-                    <li>Label: <span id="capital"></span></li>
-                    <li>Label: <span id="languages"></span></li>
-                    <li>Label: <span id="currency"></span></li>
-                    <li>Label: <span id="time-zone"></span></li>
-                    <li>Label: <span id="calling-code"></span></li>
-                    <li>Label: <span id="internet-tld"></span></li>
+                    <li class="aligned-list"><span class="label">Area: </span><span class="data" id="area">8,124 mi²</span></li>
+                    <li class="aligned-list"><span class="label">Population: </span><span class="data" id="population">6,336,000</span></li>
+                    <li class="aligned-list"><span class="label">Capital: </span> <span class="data" id="capital">San Salvador</span></li>
+                    <li class="aligned-list"><span class="label">Languages: </span> <span class="data" id="languages">Spanish</span></li>
+                    <li class="aligned-list"><span class="label">Currency: </span> <span class="data" id="currency">US Dollar</span></li>
+                    <li class="aligned-list"><span class="label">Time Zone: </span> <span class="data" id="time-zone">UTC -6</span></li>
+                    <li class="aligned-list"><span class="label">Calling Code: </span> <span class="data" id="calling-code">+503</span></li>
+                    <li class="aligned-list"><span class="label">Internet TLD: </span> <span class="data" id="internet-tld">sv</span></li>
                 </ul>
             </div>
         </div>
@@ -57,10 +58,10 @@
             </div>
             <div class="card-content">
                 <ul>
-                    <li>Label: <span id="temperature"></span></li>
-                    <li>Label: <span id="conditions"></span></li>
-                    <li>Label: <span id="wind"></span></li>
-                    <li>Label: <span id="wind-chill"></span></li>
+                    <li class="aligned-list"><span class="label">Temperature:</span><span class="data"><span id="temperature">2</span> °C</span></li>
+                    <li class="aligned-list"><span class="label">Conditions:</span><span class="data" id="conditions"></span></li>
+                    <li class="aligned-list"><span class="label">Wind:</span><span class="data"><span id="wind-speed">7</span> km/h</span></li>
+                    <li class="aligned-list"><span class="label">Wind Chill:</span><span class="data"><span id="wind-chill"></span> °C</span></li>
                 </ul>
             </div>
         </div>

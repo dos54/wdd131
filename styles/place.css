@@ -37,11 +37,19 @@ ul {
     /* text-align: right; */
 }
 
-li {
-    text-align: center;
+.aligned-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
 }
 
-li span {
+.label {
+    text-align: right;
+}
+
+.data {
     text-align: left;
 }
 
