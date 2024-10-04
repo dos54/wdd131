@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Steven Thomas</title>
+    <meta name="author" content="Steven Thomas">
+    <meta name="description" content="Steven Thomas, WDD131 - Dynamic Web Fundamentals, Place Page">
+
+    <link rel="stylesheet" href="styles/colors.css">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>El Salvador</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/santa-ana-volcano.webp" media="(min-width: 800px)">
+            <img src="images/el-salvador-bird.webp" alt="National Bird of El Salvador (Image credit: By Charles J. Sharp - Own work, from Sharp Photography, sharpphotography.co.uk, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=130235985)" width="100%">
+        </picture>
+
+        <div class="card" id="data">
+            <div class="card-header">
+                <h2>Data</h2>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Area: <span id="area">400ft</span></li>
+                    <li>Population: <span id="population">6000 people</span></li>
+                    <li>Label: <span id="capital"></span></li>
+                    <li>Label: <span id="languages"></span></li>
+                    <li>Label: <span id="currency"></span></li>
+                    <li>Label: <span id="time-zone"></span></li>
+                    <li>Label: <span id="calling-code"></span></li>
+                    <li>Label: <span id="internet-tld"></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="weather">
+            <div class="card-header">
+                <h2>Weather</h2>
+                <picture>
+                    <img src="images/sunny-weather.svg" alt="Sunny" width="150px" height="150px">
+                </picture>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Label: <span id="temperature"></span></li>
+                    <li>Label: <span id="conditions"></span></li>
+                    <li>Label: <span id="wind"></span></li>
+                    <li>Label: <span id="wind-chill"></span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span> | Steven Thomas | Alaska, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
