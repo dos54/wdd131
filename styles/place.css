@@ -37,6 +37,8 @@ ul {
     /* text-align: right; */
 }
 
+/* Stuff for the lists */
+
 .aligned-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
