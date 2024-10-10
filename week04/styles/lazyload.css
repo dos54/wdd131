@@ -1,0 +1,38 @@
+:root {
+    --font-family: Poppins, helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+main {
+    width: 400px;
+}
+
+#images {
+    display: block;
+    margin: 0 auto;
+}
+
+#images img {
+    display: block;
+    margin: 1rem;
+    background-color: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+

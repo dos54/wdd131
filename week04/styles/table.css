@@ -1,0 +1,36 @@
+body {
+	font-family: Poppins, helvetica, sans-serif;
+}
+
+table {
+    background-color: gray;
+    color: white;
+    border-spacing: 0;
+}
+
+.table-header {
+    background-color: black;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+thead {
+    background-color: #444;
+}
+
+tbody {
+    background-color: white;
+    color: black;
+}
+
+caption {
+    color: black;
+    caption-side: bottom;
+}
+
+td {
+    padding: 0 1rem;
+    min-width: 3rem;
+}
