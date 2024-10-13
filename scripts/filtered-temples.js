@@ -55,6 +55,7 @@ const addTemple = (temple) => {
     
     const picture = document.createElement('picture');
     const templeImage = document.createElement('img');
+    templeImage.loading = "lazy";
     templeImage.src = temple.imageUrl;
     templeImage.alt = `${temple.templeName} Temple, located at ${temple.location} and dedicated on the date ${temple.dedicated}.`
     picture.appendChild(templeImage);
