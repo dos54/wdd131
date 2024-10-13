@@ -13,19 +13,18 @@
         flex: 1 1 100%;
     }
 
-    nav a {
+    nav a, nav button {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        height: 100%;
     }
     
-    button {
+    #hamburger {
         display: none;
     }
 
     main {
-
         overflow: hidden;
     }
 

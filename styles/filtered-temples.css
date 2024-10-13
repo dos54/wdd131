@@ -53,7 +53,7 @@ nav li {
     min-height: 3em;
 }
 
-nav li:hover, button:hover {
+nav button:hover {
     outline: 1px solid var(--accent-1);
     background-color: var(--accent-2);
 }
@@ -69,6 +69,12 @@ button {
     padding: 1rem;
     font: inherit;
     cursor: pointer;
+}
+
+#hamburger > div {
+    display: inline-block; /* Ensures the symbol stays inline and centered */
+    transform-origin: center; /* The rotation will happen from the center */
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
 
 nav a, nav h2 {
@@ -94,14 +100,19 @@ main {
 
 #gallery {
     display: grid;
+    max-width: 1300px;
     grid-template-columns: auto;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
+    margin: 0 auto;
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
+    max-width: 600px;
 }
 
 .card > h1 {

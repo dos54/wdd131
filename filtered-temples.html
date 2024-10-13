@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Steven C. Thomas">
+    <meta name="description" content="A filtered list of temples (not comprehensive), done as an assigment for WDD131 at BYU-Idaho.">
+
     <title>WDD 131 - Dynamic Web Fundamentals - Steven Thomas</title>
     <!-- <link rel="stylesheet" href="styles/base.css"> -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-medium.css">
+    <!-- <link rel="stylesheet" href="styles/filtered-temples-medium.css"> -->
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
     <script defer src="scripts/filtered-temples.js"></script>
     <script defer src="scripts/getdates.js"></script>
@@ -22,11 +25,11 @@
         <nav>
             <ul>
                 <li><h2>Temple Album</h2></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><button id="filter-home" type="button">Home</button></li>
+                <li><button id="filter-old" type="button">Old</button></li>
+                <li><button id="filter-new" type="button">New</button></li>
+                <li><button id="filter-large" type="button">Large</button></li>
+                <li><button id="filter-small" type="button">Small</button></li>
             </ul>
         </nav>
     </header>
