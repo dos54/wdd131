@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 880px) and (max-width: 1299px) {
     
     nav {
         display: block;
@@ -31,7 +31,7 @@
 
     #gallery {
         margin: 0 auto;
-        grid-template: repeat(3, .8fr) / repeat(3, .8fr);
+        grid-template: repeat(3, .8fr) / repeat(2, .8fr);
         gap: 10px;
     }
 
