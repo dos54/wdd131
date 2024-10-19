@@ -110,7 +110,7 @@ li {
 footer {
 	text-align: center;
 	background-color: var(--accent-3);
-	color: var(--accent-text);
+	color: var(white);
 	margin: 0 auto;
 	width: 100%;
 	padding: 1rem 1rem;

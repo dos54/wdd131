@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Steven C. Thomas">
+    <meta name="description" content="Final project site plan for WDD131">
+
+    <title>WDD131 - Steven Thomas - Final Project Siteplan</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-medium.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Turning Alaska</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="gallery">
+            <div class="card" id="plan">
+                <h2>Turning Alaska Site Plan</h2>
+
+                <!-- Site Name -->
+                <section>
+                    <h3>Site Name</h3>
+                    <p><strong>Name: </strong>Turning Alaska</p>
+                    <p><strong>Domain: </strong><a href="turningalaska.com">turningalaska.com</a> (Note that the domain is not currently hosting a webpage).</p>
+                    <p>Turning Alaska is a business that my father owns. He is a wood turner and has asked me to make a website for him a few times. I think that this final project would provide a good opportunity to get started on that.</p>
+                </section>
+                
+                <!-- Purpose -->
+                <section>
+                    <h3>Purpose</h3>
+                    <p>
+                        The website should serve as a landing page and gallery for my dad and his work. It will have a home page, a gallery with tags (to allow for things like filtering by item type), and it will have a form that will allow a user to sign up for a newsletter.
+                    </p>
+                </section>
+
+                <!-- Scenarios -->
+                <section>
+                    <h3>Scenarios</h3>
+                    <ul>
+                        <li>What is Turning Alaska?</li>
+                        <li>What are some of the things that Turning Alaska has made?</li>
+                        <li>Does Turning Alaska sell wood turnings?</li>
+                        <li>How do I purchase wood turnings?</li>
+                        <li>How do I contact the owner of Turning Alaska?</li>
+                    </ul>
+                </section>
+
+                <!-- Color Schema -->
+                <section>
+                    <h3>Color Schema</h3>
+                    <p>The color palatte was selected from <a href="https://colorhunt.co/palette/789dbcffe3e3fef9f2c9e9d2">here</a>.</p>
+                    <ul id="color-schema">
+                        <li><div class="color-box background-color"></div>Background Color: #FEF9F2 <p>
+                            The primary background color of the webpages.
+                        </p></li>
+                        <li><div class="color-box accent-1"></div>
+                            Accent 1: #789DBC
+                        <p>
+                            A darker accent. Will mostly be used for borders.
+                        </p></li>
+                        <li><div class="color-box accent-2"></div>
+                            Accent 2: #FFE3E3
+                        <p>
+                            Light accent. Used to help highlight some elements
+                        </p></li>
+                        <li><div class="color-box accent-3"></div>
+                            Accent 3: #C9E9D2
+                        <p>
+                            Used for headings and footers
+                        </p>
+                        </li>
+                        <li><div class="color-box accent-4"></div>
+                            Accent 4: #FFFFFF
+                            <p>
+                                White, used for greater emphasis and to stand out against the primary background color.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Typography -->
+                 <section>
+                    <h3>Typography</h3>
+                    <p>
+                        The only font that will be used is Poppins.
+                    </p>
+                 </section>
+
+                 <!-- Wireframes -->
+                 <section>
+                    <h3>Wireframes</h3>
+                    <!-- Mobile view -->
+                     <div id="wireframes">
+                         <figure>
+                             <picture>
+                                 <img src="images/wireframe-mobile-view.svg" alt="Wireframe of the mobile website">
+                             </picture>
+                             <figcaption>
+                                 Home page mobile view wireframe
+                             </figcaption>
+                         </figure>
+     
+                         <!-- Desktop view -->
+                         <figure>
+                             <picture>
+                                <img src="images/wireframe-desktop-view.svg" alt="Wireframe of the desktop website">
+                             </picture>
+                             <figcaption>
+                                <p>
+                                    Home page desktop view wireframe
+                                </p>
+                                <p>
+                                    I know it looks the same as the mobile version, but I don't see much reason to change much. The largest difference will be that the image gallery will be larger.
+                                </p>
+                             </figcaption>
+                         </figure>
+                     </div>
+                 </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span> | Steven Thomas | Alaska, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
