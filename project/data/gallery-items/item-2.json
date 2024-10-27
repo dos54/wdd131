@@ -1,0 +1,11 @@
+{
+    "type": "bowl",
+    "materials": [
+        "black walnut", 
+        "figured maple"
+    ],
+    "image": "item-2.jpg",
+    "alt-images": [
+        "item-2_alt-1.jpg"
+    ]
+}

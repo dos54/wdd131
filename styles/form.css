@@ -1,0 +1,101 @@
+:root {
+    --accent-1: #522258;
+    --accent-2: #8C3061;
+    --accent-3: #C63C51;
+    --accent-4: #D95F59;
+    --background-color: #e3d8de;
+
+    --font-family: Poppins, inter, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+
+    font-family: var(--font-family);
+}
+
+/* Header things */
+header {
+    background-color: var(--accent-1);
+    color: white;
+
+    text-align: center;
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+}
+
+main {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+
+/* Footer things */
+footer {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    background-color: var(--accent-1);
+    text-align: center;
+
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+/* Cards */
+
+#gallery {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card {
+    /* Sizing etc */
+    margin: .5rem;
+    padding: .5rem 1rem;
+    overflow: hidden;
+    height: auto;
+    flex: 0 0 auto;
+    max-width: 75%;
+
+    /* Border */
+    border: var(--accent-1) solid 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    /* Styling */
+    background-color: #f5dded;
+}
+
+/* Form Stuffs */
+
+.web-form-1 label {
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.web-form-1 label select,
+.web-form-1 label input[type="date"] {
+    display: block;
+    min-height: 44px;
+    min-width: 220px;
+    max-width: 400px;
+}
+
+
+
+.web-form-1 label input[type="radio"] {
+    display: block;
+    text-align: center;
+}

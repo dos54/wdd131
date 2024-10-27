@@ -1,0 +1,10 @@
+{
+    "type": "bowl",
+    "materials": [
+        "bubinga"
+    ],
+    "image": "item-1.jpg",
+    "alt-images": [
+        "item-1_alt-1.jpg"
+    ]
+}

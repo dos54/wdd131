@@ -1,0 +1,30 @@
+main {
+    margin: 0 4rem;
+}
+
+main > section:first-of-type {
+    border: none;
+}
+
+main > section {
+    padding: .25rem 1rem;
+}
+
+main > section > h2 {
+    text-align: center;
+}
+
+.personal-story {
+    display: flex;
+}
+
+.portrait img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+}
+
+.story-text {
+    margin-left: 2rem;
+    flex: 1;
+}

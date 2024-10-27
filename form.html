@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Steven C. Thomas">
+    <meta name="description" content="Product Review Form for the WDD131 course via BYU-Idaho">
+    
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+
+    <title>WDD131 - Steven C. Thomas - Product Review Form</title>
+
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <div id="gallery">
+            <div class="card">
+                <form action="review.html" method="get" class="web-form-1">
+                    <label>Product Name 
+                        <select id="product-id">
+                            <option value="" selected disabled>Choose a product...</option>
+                            
+                        </select>
+                    </label>
+
+                    <div class="horizontal-radio-buttons">
+                        <p>Overall Rating</p>
+                        <label>★<input type="radio" name="rating" id=""></label>
+                        <label>★★<input type="radio" name="rating" id=""></label>
+                        <label>★★★<input type="radio" name="rating" id=""></label>
+                        <label>★★★★<input type="radio" name="rating" id=""></label>
+                        <label>★★★★★<input type="radio" name="rating" id=""></label>
+                    </div>
+
+                    <label>Date of Installation <input type="date" name="" id=""></label>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span> | Steven Thomas | Alaska, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
