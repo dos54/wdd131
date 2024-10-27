@@ -13,6 +13,7 @@ function createGalleryItem(item) {
     const picture = document.createElement('picture');
     const img = document.createElement('img');
     img.src = `images/${item.image}`;
+    img.loading = "lazy";
     img.classList.add('product-picture');
     img.alt = `Image of ${item.materials[0]} ${item.type}`;
 
